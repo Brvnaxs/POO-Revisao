@@ -1,6 +1,6 @@
 package entidades;
 
-public class Ave extends Animal implements Animais{
+public class Ave extends Animal{
     private String tipoPena;
     private String nomeCientifico;
 
@@ -31,16 +31,16 @@ public class Ave extends Animal implements Animais{
 
     @Override
     public String emitirSom(String nome) {
-        return "Som de ave";
+        return "som";
     }
 
     @Override
     public void seAlimentar(String nome) {
-        return;
+
     }
 
     @Override
     public void seMovimentar(String nome) {
-        return;
+
     }
 }

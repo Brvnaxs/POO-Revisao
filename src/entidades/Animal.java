@@ -1,6 +1,6 @@
 package entidades;
 
-public abstract class Animal {
+public abstract class Animal implements Animais{
     private String nome;
     private int idade;
     private double peso;

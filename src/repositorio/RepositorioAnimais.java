@@ -7,19 +7,21 @@ public class RepositorioAnimais {
 
     public RepositorioAnimais() {}
     public void inserir(Animal animal){
-        if(vetor[0].equals(null)){
-            vetor[0] = animal;
+        if(this.vetor[0] == null){
+            this.vetor[0] = animal;
         }else{
-            for(int i = 0; i < vetor.length; i++){
-                if(vetor[i].equals(null)){
-                    vetor[i] = animal;
+            for(int i = 0; i < this.vetor.length; i++){
+                if(this.vetor[i] == null){
+                    this.vetor[i] = animal;
                 }
             }
         }
     }
-    public void emitirSom(){
-        for(int i = 0; i < vetor.length; i++){
-            System.out.println(vetor[i].getNome());
+    public void emitirSomTodos(){
+        for(int i = 0; i < this.vetor.length; i++){
+            if(this.vetor[i] != null){
+                System.out.println(this.vetor[i].emitirSom(this.vetor[i].getNome()));
+            }
         }
     }
 
